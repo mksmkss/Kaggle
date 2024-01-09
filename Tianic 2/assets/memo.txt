@@ -1,0 +1,20 @@
+origin_test=元データ
+    1.1. add_title_test=Title追加→add_isAlone,conv_embarkedを追加
+    1.2. ambiguous_age_test=ageを層別
+        1.3. stand_test=標準化した  ←RandomForestではfloat型が使えないので却下
+    1.4. eAge_test=RandomForestで予測したeAgeを追加
+    1.5. stand_eAge_test=標準化したeAgeを追加
+
+origin_train=元データ
+    1.1. add_title_train=Title追加→add_isAlone,conv_embarkedを追加
+    1.2. ambiguous_age_train=ageを層別
+        1.3. stand_train=標準化した ←RandomForestではfloat型が使えないので却下
+    1.4. eAge_train=RandomForestで予測したeAgeを追加, 不要だが対称的にするために追加
+    1.5. stand_eAge_train=標準化したeAgeを追加．，不要だが対称的にするために追加
+
+
+result_1=平均で欠損値補完
+result_2=予測値で欠損値補完
+result_3=標準化後求めた予測値で欠損値補完
+result_4=XからAgeを抜いた
+result_5=全て標準化後求めた予測値で欠損値補完
